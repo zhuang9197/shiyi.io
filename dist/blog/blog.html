@@ -164,7 +164,7 @@
                                     <h3 class="mb-20">Personal Information</h3>
                                     <ul>
                                         <li><span class="title">姓名</span><span class="value">庄泽冰</span></li>
-                                        <li><span class="title">年龄</span><span class="value">23</span></li>
+                                        <li><span class="title">年龄</span><span class="value">{year}</span></li>
                                         <li><span class="title">现居</span><span class="value">云南，曲靖</span></li>
                                         <li><span class="title">地址</span><span class="value">福建省泉州市</span></li>
                                         <li><span class="title">邮箱</span><span class="value">2280779141@qq.com</span></li>
@@ -1036,6 +1036,9 @@
         let y = 0
         let index = 0
         var odiv = document.getElementById('main')
+        var now = new Date();
+        var year = now.getFullYear();
+        
 
         window.addEventListener('mousemove',function(xyz)
         {
