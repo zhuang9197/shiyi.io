@@ -1,4 +1,4 @@
-# Tomotoes-HomePage
+# Gentleman Dog's-HomePage
 
 
 [![支付宝赞助按钮](https://camo.githubusercontent.com/f4874996db5ac421925db08778d800d76d36abbc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2545362539342541462545342542422539382545352541452539442d25453525393025393154412545362538442539302545352538412541392d677265656e2e737667)](https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/alipay.png)
@@ -11,9 +11,9 @@
 
 ## Introduction
 
-> `一个坏掉的番茄`  home page.
+> `绅士狗`  home page.
 
-[Online browsing](http://tomotoes.com)
+[Online browsing](http://shi-yi.xyz)
 
 Do you want to install such a cool homepage for your website?
 
@@ -31,7 +31,7 @@ Let's start now!
 ## Install
 
 ```sh
-git clone https://github.com/Tomotoes/HomePage.git
+git clone https://github.com/zhuang9197/shiyi.io.git
 cd HomePage
 npm install
 npm run dev
@@ -73,8 +73,8 @@ such as：
 ```json
 {
 	"head": {
-		"title": "一个坏掉的番茄",
-		"description": "Author:SimonMa,Category:Personal Blog",
+		"title": "Gentleman Dog's",
+		"description": "Personal Blog",
 		"favicon": "favicon.ico"
 	}
 }
