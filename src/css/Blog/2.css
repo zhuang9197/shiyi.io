@@ -1,0 +1,28 @@
+.imginside {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: url(https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/R-C.gif);
+    background-size: cover;
+}
+
+
+.avatar {
+    .Yellow {
+        display: block;
+    }
+
+    .Black {
+        display: none;
+    }
+
+    &:hover {
+        .Yellow {
+            display: none;
+        }
+
+        .Black {
+            display: block;
+        }
+    }
+}

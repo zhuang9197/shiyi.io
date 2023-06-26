@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="../css/style-light.css">
         <!--Color Css-->
         <link rel="stylesheet" href="../css/blue-color.css">
+        <link rel="stylesheet" href="../../src/css/Blog/2.css">
 
         <!--Modernizr Js-->
         <script src="../js/modernizr.js"></script>
@@ -27,13 +28,7 @@
         <link rel="shortcut icon" href="../assets/Icon/favicon.ico" type="image/x-icon">
 
         <style>
-            .imginside{
-                width:40px;
-                height: 40px;
-                position: absolute;
-                background-image: url("../assets/rc.gif");
-                background-size: cover;
-            }
+            
         </style>
 
     </head>
@@ -71,9 +66,13 @@
                     <!--Main Header-->
                     <div class="header-main" data-simplebar>
                         <div id = "divid" class="image-container">
-                            <h2 class="header-name">Gentleman Dog</h2>
-                            <img src="../assets/GentlemanDog.jpg" alt="profile-pic">
-                        </div>
+                            <div class = "avatar">
+                                <img class="Yellow" src="https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/GentlemanDog.png" alt="profile-pic">
+                                <img class="Black" src="https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/GentlemanDog1.png" alt="profile-pic">
+                            </div>
+                            
+                            <div style="height: 44PX;"><h2 class="header-name">Gentleman Dog</h2></div>
+                        </div> 
 
                         <!--Nav Menus-->
                         <nav class="nav-menu">
@@ -112,8 +111,8 @@
             <div id="main" class="site-main">
                 
                 <!--Banner Section Start-->
-                <section id="home" class="banner-section pt-page" style="background-image: url('../../src/assets/Background.png')">
-                    <div class="imginside"></div>
+                <section id="home" class="banner-section pt-page" style="background-image: url(https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/Background.png)">
+                    <div class="imginside" id = "imgRun"></div>
                     <!--Particle Container-->
                     <div id="particles-js"></div>
 
@@ -139,7 +138,9 @@
 
 
                 <!--About Section Start-->
-                <section id="about" class="about-section pt-page" style="background-image: url('../../src/assets/Background.png')">
+                <section id="about" class="about-section pt-page" style="background-image: url(https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/Background.png);">
+                    <!--Particle Container-->
+                    <div id="particles-js"></div>
                     <div class="section-container">
                         <!--Page Heading-->
                         <div class="page-heading">
@@ -153,8 +154,8 @@
                             <div class="col-lg-8">
                                 <!--Personal Intro-->
                                 <h3 class="mb-20">Front & back development engineer</h3>
-                                <p>目前就读于曲靖师范学院物理与电子工程学院电子信息工程专业，目前处于大四阶段，将在2023年完成学历毕业。</p>
-                                <p> 在校期间，我在完成必修课程的同时，利用课余时间系统性地学习了多门编程语言，例如:c++,c#,html5,css,js等，能够熟练使用的框架思想有：vue3，spring，spring boot。同时也掌握了mysql这一门数据库语言。</p>
+                                <p style="color: blue;font-style: oblique;font-size: medium;">就读于曲靖师范学院物理与电子工程学院电子信息工程专业，目前处于大四阶段，将在2023年完成学历毕业。</p>
+                                <p style="color: blue;font-style: oblique;font-size: medium;"> 在校期间，我在完成必修课程的同时，利用课余时间系统性地学习了多门编程语言，例如:c++,c#,html5,css,js等，能够熟练使用的框架思想有：vue3，spring，spring boot。同时也掌握了mysql这一门数据库语言。</p>
 
                             </div>
 
@@ -163,12 +164,12 @@
                                 <div class="about-info">
                                     <h3 class="mb-20">Personal Information</h3>
                                     <ul>
-                                        <li><span class="title">姓名</span><span class="value">庄泽冰</span></li>
-                                        <li><span class="title">年龄</span><span class="value">{year}</span></li>
-                                        <li><span class="title">现居</span><span class="value">云南，曲靖</span></li>
-                                        <li><span class="title">地址</span><span class="value">福建省泉州市</span></li>
-                                        <li><span class="title">邮箱</span><span class="value">2280779141@qq.com</span></li>
-                                        <li><span class="title">电话</span><span class="value">15759479197</span></li>
+                                        <li><span class="title">姓名</span><span class="information">庄泽冰</span></li>
+                                        <li><span class="title">年龄</span><span class="information">{year}</span></li>
+                                        <li><span class="title">现居</span><span class="information">云南，曲靖</span></li>
+                                        <li><span class="title">地址</span><span class="information">福建省泉州市</span></li>
+                                        <li><span class="title">邮箱</span><span class="information">2280779141@qq.com</span></li>
+                                        <li><span class="title">电话</span><span class="information">15759479197</span></li>
                                        
                                     </ul>
                                     <!-- <div class="resume-button mt-30">
@@ -183,7 +184,7 @@
                         <div class="row services mb-30">
                             <div class="col-md-12">
                                 <div class="subheading">
-                                    <h3>技能</h3>
+                                    <h3  class="information">技能</h3>
                                 </div>
                             </div>
 
@@ -191,8 +192,8 @@
                             <div class="col-lg-3 col-sm-6">
                                 <div class="service-item">
                                     <div class="icon"><i class="lnr lnr-laptop"></i></div>
-                                    <h4>网页开发</h4>
-                                    <p>掌握html5+css+js,.</p>
+                                    <h4  class="information">网页开发</h4>
+                                    <p  class="information">掌握html5+css+js,.</p>
                                 </div>
                             </div>
 
@@ -200,8 +201,8 @@
                             <div class="col-lg-3 col-sm-6">
                                 <div class="service-item">
                                     <div class="icon"><i class="lnr lnr-eye"></i></div>
-                                    <h4>网页设计</h4>
-                                    <p>熟练掌握vue3框架.</p>
+                                    <h4  class="information">网页设计</h4>
+                                    <p  class="information">熟练掌握vue3框架.</p>
                                 </div>
                             </div>
 
@@ -209,8 +210,8 @@
                             <div class="col-lg-3 col-sm-6">
                                 <div class="service-item">
                                     <div class="icon"><i class="lnr lnr-laptop-phone"></i></div>
-                                    <h4>后端开发</h4>
-                                    <p>主流的编程语言都有过系统性学习.</p>
+                                    <h4  class="information">后端开发</h4>
+                                    <p  class="information">主流的编程语言都有过系统性学习.</p>
                                 </div>
                             </div>
 
@@ -218,87 +219,13 @@
                             <div class="col-lg-3 col-sm-6">
                                 <div class="service-item">
                                     <div class="icon"><i class="lnr lnr-camera"></i></div>
-                                    <h4>更多</h4>
-                                    <p>使用过unity3d开发过个人小项目，用java语言开发过 十步万度 小游戏.</p>
+                                    <h4  class="information">更多</h4>
+                                    <p  class="information">使用过unity3d开发过个人小项目，用java语言开发过 十步万度 小游戏.</p>
                                 </div>
                             </div>
                         </div>
                         <!--Services Row End-->
 
-                        <!--Clients Row Start-->
-                        <div class="row clients mb-70">
-                            <div class="col-md-12">
-                               
-                            </div>
-
-                            <div class="owl-carousel owl-theme">
-
-                                <!--Client Logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        
-                                    </a>
-                                </div>
-
-                                <!--Client Logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                       
-                                    </a>
-                                </div>
-
-                                <!--Client Logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        
-                                    </a>
-                                </div>
-
-                                <!--Client Logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        
-                                    </a>
-                                </div>
-
-                                <!--Client Logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                       
-                                    </a>
-                                </div>
-
-                                <!--Client Logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        
-                                    </a>
-                                </div>
-
-                                <!--Client Logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        
-                                    </a>
-                                </div>
-
-                                <!--Client Logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        
-                                    </a>
-                                </div>
-
-                                <!--Client Logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                      
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--Clients Row End-->
 
                         <!--Testimonials Row Start-->
                         <div class="row testimonials mb-50">
@@ -308,47 +235,7 @@
                                 </div> -->
                                 <div class="owl-carousel owl-theme">
 
-                                    <!--Testimonail Item-->
-                                    <!-- <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <p>Ipsum ab necessitatibus numquam vitae quis. Nobis nostrum deserunt suscipit eos fugit. Consectetur dolorum temporibus facilis impedit exercitationem dignissimos.</p>
-                                        </div>
-                                        <div class="testimonial-meta">
-                                           
-                                            <div class="meta-info">
-                                                <h4>Kate Fox</h4>
-                                                <p>Digital Marketing Executive</p>
-                                            </div>
-                                        </div>
-                                    </div> -->
-
-                                    <!--Testimonail Item-->
-                                    <!-- <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <p>Ipsum ab necessitatibus numquam vitae quis. Nobis nostrum deserunt suscipit eos fugit. Consectetur dolorum temporibus facilis impedit exercitationem dignissimos.</p>
-                                        </div>
-                                        <div class="testimonial-meta">
-                                     
-                                            <div class="meta-info">
-                                                <h4>Emma Jones</h4>
-                                                <p>Creative Director</p>
-                                            </div>
-                                        </div>
-                                    </div> -->
-
-                                    <!--Testimonail Item-->
-                                    <!-- <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <p>Ipsum ab necessitatibus numquam vitae quis. Nobis nostrum deserunt suscipit eos fugit. Consectetur dolorum temporibus facilis impedit exercitationem dignissimos.</p>
-                                        </div>
-                                        <div class="testimonial-meta">
-                                           
-                                            <div class="meta-info">
-                                                <h4>Jack Smith</h4>
-                                                <p>Marketing Director</p>
-                                            </div>
-                                        </div>
-                                    </div> -->
+                                   
 
                                 </div>
                             </div>
@@ -361,7 +248,9 @@
 
 
                 <!--Resume Section Start-->
-                <section id="resume" class="resume-section pt-page" style="background-image: url('../../src/assets/Background.png')">
+                <section id="resume" class="resume-section pt-page" style="background-image: url(https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/Background.png)">
+                    <!--Particle Container-->
+                    <div id="particles-js"></div>
                     <div class="section-container">
                         <div class="page-heading">
                             <span class="icon"><i class="lnr lnr-license"></i></span>
@@ -384,7 +273,7 @@
                                         <div class="content">
                                             <h4>曲靖师范学院</h4>
                                             <h5>物理与电子工程学院，电子信息工程</h5>
-                                            <p class="info">
+                                            <p class="info" style="color: black;font-style: oblique;font-size: medium;">
                                                 在校学过多种编程语言：c语言编程，python编程，java编程。
                                                 也学习了多门嵌入式课程：51单片机，arm单片机。
                                                 在校课余时间本人系统性地学习了：html5，css，JavaScript，C#。
@@ -405,7 +294,7 @@
                                         <div class="content">
                                             <h4>惠安县第三中学</h4>
                                             <h5>福建省二级达标中学</h5>
-                                            <p class="info">
+                                            <p class="info"  style="color: black;font-style: oblique;font-size: medium;">
                                                 位于中国福建省泉州市惠安县，是福建省二级达标中学。现学校设有初中部和高中部。福建省惠安第三中学简称“惠安三中”，有着悠久的办学历史和优良的办学传统。
                                             </p>
                                         </div>
@@ -421,7 +310,7 @@
                                         <div class="content">
                                             <h4>山霞中学</h4>
                                             <h5>惠安山霞中学</h5>
-                                            <p class="info">
+                                            <p class="info"  style="color: black;font-style: oblique;font-size: medium;">
                                                 山霞中学位于福建泉州市惠安县。是一所公办的中学。
                                             </p>
                                         </div>
@@ -449,7 +338,7 @@
                                         <div class="content">
                                             <h4>暂无</h4>
                                             <h5>目前正在寻找合适的实习岗位</h5>
-                                            <p class="info">
+                                            <p class="info"  style="color: black;font-style: oblique;font-size: medium;">
                                                 本人好学，对编程开发类格外热爱，目前处于大四阶段，正在寻找合适的实习岗位。
                                                 倘若有伯乐认为我合适的，请联系我。
                                             </p>
@@ -460,29 +349,13 @@
                                         </span>
                                     </li>
 
-                                    <!--Education Item-->
-                                    <!-- <li>
-                                        <span class="line-left"></span>
-                                        <div class="content">
-                                            <h4>BA(HONS) Graphics</h4>
-                                            <h5>Central Saint Martins, London, UK</h5>
-                                            <p class="info">
-                                                Elit voluptatibus quas necessitatibus ullam tenetur provident voluptatibus. Ratione delectus lorem minus ipsa architecto. Saepe officiis sint adipisci.
-                                            </p>
-                                        </div>
-                                        <span class="year">
-                                            <span class="to">2013</span>
-                                            <span class="from">2012</span>
-                                        </span>
-                                    </li> -->
-
-                                    <!--Education Item-->
+                                    
                                     <li>
                                         <span class="line-left"></span>
                                         <div class="content">
                                             <h4>个人项目</h4>
                                             <h5>人脸识别</h5>
-                                            <p class="info">
+                                            <p class="info"  style="color: black;font-style: oblique;font-size: medium;">
                                                 使用python，基于tensorflow开发的简易人脸识别，其中包括用户交互界面的编写，照片的采集处理，以及人脸数据模型的创建及训练。
                                                 <br>
                                                 成果：高辨别率地识别宿舍六人，对未训练的对象呈现unknown。
@@ -507,77 +380,10 @@
 
                             <!--Design Skills Column Start-->
                             <div class="col-lg-6 skills">
-                                <!-- <div class="subheading">
-                                    <h3>Design Skills</h3>
-                                </div> -->
 
-                                <!--Design Skill Item-->
-                                <!-- <div class="skill-item">
-                                    <h4 class="progress-title">Coral Draw</h4>
-                                    <div class="progress">
-                                        <div class="progress-bar" data-progress-value="91">
-                                            <div class="progress-value">91%</div>
-                                        </div>
-                                    </div>
-                                </div> -->
-
-                                <!--Design Skill Item-->
-                                <!-- <div class="skill-item">
-                                    <h4 class="progress-title">Photoshop</h4>
-                                    <div class="progress">
-                                        <div class="progress-bar" data-progress-value="82">
-                                            <div class="progress-value">82%</div>
-                                        </div>
-                                    </div>
-                                </div> -->
-
-                                <!--Design Skill Item-->
-                                <!-- <div class="skill-item">
-                                    <h4 class="progress-title">Illustrator</h4>
-                                    <div class="progress">
-                                        <div class="progress-bar" data-progress-value="94">
-                                            <div class="progress-value">94%</div>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
-                            <!--Design Skills Column End-->
-
-                            <!--Coding Skills Column Start-->
                             <div class="col-lg-6 skills">
-                                <!-- <div class="subheading">
-                                    <h3>Coding Skills</h3>
-                                </div> -->
-
-                                <!--Coding Skill Item-->
-                                <!-- <div class="skill-item">
-                                    <h4 class="progress-title">HTML5</h4>
-                                    <div class="progress">
-                                        <div class="progress-bar" data-progress-value="83">
-                                            <div class="progress-value">83%</div>
-                                        </div>
-                                    </div>
-                                </div> -->
-
-                                <!--Coding Skill Item-->
-                                <!-- <div class="skill-item">
-                                    <h4 class="progress-title">CSS3</h4>
-                                    <div class="progress">
-                                        <div class="progress-bar" data-progress-value="75">
-                                            <div class="progress-value">75%</div>
-                                        </div>
-                                    </div>
-                                </div> -->
-
-                                <!--Coding Skill Item-->
-                                <!-- <div class="skill-item">
-                                    <h4 class="progress-title">Javascript</h4>
-                                    <div class="progress">
-                                        <div class="progress-bar" data-progress-value="92">
-                                            <div class="progress-value">92%</div>
-                                        </div>
-                                    </div>
-                                </div> -->
+                               
 
                             </div>
                             <!--Coding Skills Column End-->
@@ -590,181 +396,15 @@
 
 
                
-                <!-- <section id="portfolio" class="portfolio-section pt-page">
-                    <div class="section-container">
-
-                        
-                        <div class="page-heading">
-                            <span class="icon"><i class="lnr lnr-briefcase"></i></span>
-                            <h2>Portfolio.</h2>
-                        </div>
-
-                        <div class="row">
-                     
-                            <div class="col-md-12 portfolio-filter text-center">
-                                <ul>
-                                    <li class="active" data-filter="*">All</li>
-                                    <li data-filter=".brand">Brand</li>
-                                    <li data-filter=".design">Design</li>
-                                    <li data-filter=".graphic">Graphic</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                     
-                        <div class="row portfolio-items mb-50">
-
-                           
-                            <div class="item col-lg-4 col-sm-6 brand graphic">
-                                <a class="image-link" href="img/portfolio/img-1.jpg">
-                                    <figure>
-                                        <img src="img/portfolio/img-1.jpg" alt="">
-                                        <figcaption>
-                                            <h4>Book Design</h4>
-                                            <p>Graphic</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                         
-                            <div class="item col-lg-4 col-sm-6 design">
-                                <a class="ajax-link" href="single-work.html">
-                                    <figure>
-                                        <img src="img/portfolio/img-2.jpg" alt="">
-                                        <figcaption>
-                                            <h4>Notepad Design</h4>
-                                            <p>Design</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                           
-                            <div class="item col-lg-4 col-sm-6 design graphic">
-                                <a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI">
-                                    <figure>
-                                        <img src="img/portfolio/img-3.jpg" alt="">
-                                        <figcaption>
-                                            <h4>Creative Cup</h4>
-                                            <p>Graphic</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                           
-                            <div class="item col-lg-4 col-sm-6 design">
-                                <a class="image-link" href="img/portfolio/img-4.jpg">
-                                    <figure>
-                                        <img src="img/portfolio/img-4.jpg" alt="">
-                                        <figcaption>
-                                            <h4>Business Card</h4>
-                                            <p>Design</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                          
-                            <div class="item col-lg-4 col-sm-6 brand">
-                                <a class="ajax-link" href="single-work.html">
-                                    <figure>
-                                        <img src="img/portfolio/img-5.jpg" alt="">
-                                        <figcaption>
-                                            <h4>Back Pack</h4>
-                                            <p>Brand</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                          
-                            <div class="item col-lg-4 col-sm-6 design">
-                                <a class="ajax-link" href="single-work.html">
-                                    <figure>
-                                        <img src="img/portfolio/img-6.jpg" alt="">
-                                        <figcaption>
-                                            <h4>Door Hangar</h4>
-                                            <p>Design</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                         
-                            <div class="item col-lg-4 col-sm-6 graphic">
-                                <a class="image-link" href="img/portfolio/img-7.jpg">
-                                    <figure>
-                                        <img src="img/portfolio/img-7.jpg" alt="">
-                                        <figcaption>
-                                            <h4>Notepad Design</h4>
-                                            <p>graphic</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                           
-                            <div class="item col-lg-4 col-sm-6 brand">
-                                <a class="image-link" href="img/portfolio/img-8.jpg">
-                                    <figure>
-                                        <img src="img/portfolio/img-8.jpg" alt="">
-                                        <figcaption>
-                                            <h4>Creative Flyer</h4>
-                                            <p>Brand</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                        
-                            <div class="item col-lg-4 col-sm-6 brand">
-                                <a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI">
-                                    <figure>
-                                        <img src="img/portfolio/img-9.jpg" alt="">
-                                        <figcaption>
-                                            <h4>Mobile App</h4>
-                                            <p>Brand</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                         
-                            <div class="item col-lg-4 col-sm-6 graphic">
-                                <a class="image-link" href="img/portfolio/img-10.jpg">
-                                    <figure>
-                                        <img src="img/portfolio/img-10.jpg" alt="">
-                                        <figcaption>
-                                            <h4>Cup Design</h4>
-                                            <p>Graphic</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                        
-                            <div class="item col-lg-4 col-sm-6 brand graphic">
-                                <a class="ajax-link" href="single-work.html">
-                                    <figure>
-                                        <img src="img/portfolio/img-11.jpg" alt="">
-                                        <figcaption>
-                                            <h4>Creative Box</h4>
-                                            <p>brand</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </section> -->
+                
              
 
 
                 <!--Blog Section Start-->
-                <section id="blog" class="blog-section pt-page" style="background-image: url('../../src/assets/Background.png')">
+                <section id="blog" class="blog-section pt-page" style="background-image: url(https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/Background.png)">
+
+                    <!--Particle Container-->
+                    <div id="particles-js"></div>
                     <div class="section-container">
 
                         <!--Page Heading-->
@@ -772,127 +412,38 @@
                             <span class="icon"><i class="lnr lnr-book"></i></span>
                             <h2>博客.</h2>
                         </div>
-
-                        <div class="row blogs-masonry">
-
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="blog-light.html" class="blog-item">
+                        <div class="row blogs-masnory">
+                            <div class="col-lg-4 col-sm-6 bloghover">
+                                <a href="List/Database.html" class="blog-item">
                                     <div class="blog-image">
-                                        <img src="img/blog/img-1.jpg" alt="#">
+                                        <img src="https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/Database.png" alt="#">
                                     </div>
                                     <div class="blog-content">
-                                        <span class="cat">Web Design</span>
-                                        <h4 class="blog-title">Best Way to Design</h4>
-                                        <div class="blog-date">August 15, 2018</div>
+                                        <h2>数据库</h2>
                                     </div>
                                 </a>
                             </div>
-
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="blog-light.html" class="blog-item">
+                            <div class="col-lg-4 col-sm-6 bloghover">
+                                <a href="List/Framework.html" class="blog-item">
                                     <div class="blog-image">
-                                        <img src="img/blog/img-2.jpg" alt="#">
+                                        <img src="https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/Framework.png" alt="#">
                                     </div>
                                     <div class="blog-content">
-                                        <span class="cat">Personal</span>
-                                        <h4 class="blog-title">Things I Need to Get Started</h4>
-                                        <div class="blog-date">August 10, 2018</div>
+                                        <h2>设计模式</h2>
                                     </div>
                                 </a>
                             </div>
-
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="blog-light.html" class="blog-item">
+                            <div class="col-lg-4 col-sm-6 bloghover">
+                                <a href="List/.html" class="blog-item">
                                     <div class="blog-image">
-                                        <img src="img/blog/img-3.jpg" alt="#">
+                                        <img src="https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/ThreadLocal.png" alt="#">
                                     </div>
                                     <div class="blog-content">
-                                        <span class="cat">Design</span>
-                                        <h4 class="blog-title">My Current Workspace</h4>
-                                        <div class="blog-date">August 4, 2018</div>
+                                        <h2 class="blog-title">多线程</h2>
                                     </div>
                                 </a>
                             </div>
-
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="blog-light.html" class="blog-item">
-                                    <div class="blog-image">
-                                        <img src="img/blog/img-4.jpg" alt="#">
-                                    </div>
-                                    <div class="blog-content">
-                                        <span class="cat">Traveling</span>
-                                        <h4 class="blog-title">Best Place to Travel this Summer</h4>
-                                        <div class="blog-date">July 28, 2018</div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="blog-light.html" class="blog-item">
-                                    <div class="blog-image">
-                                        <img src="img/blog/img-5.jpg" alt="#">
-                                    </div>
-                                    <div class="blog-content">
-                                        <span class="cat">Web Design</span>
-                                        <h4 class="blog-title">Latest UI Trends to Inspired From</h4>
-                                        <div class="blog-date">July 25, 2018</div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="blog-light.html" class="blog-item">
-                                    <div class="blog-image">
-                                        <img src="img/blog/img-6.jpg" alt="#">
-                                    </div>
-                                    <div class="blog-content">
-                                        <span class="cat">Technology</span>
-                                        <h4 class="blog-title">Latest Tech 2018</h4>
-                                        <div class="blog-date">July 19, 2018</div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="blog-light.html" class="blog-item">
-                                    <div class="blog-image">
-                                        <img src="img/blog/img-7.jpg" alt="#">
-                                    </div>
-                                    <div class="blog-content">
-                                        <span class="cat">LifeStyle</span>
-                                        <h4 class="blog-title">Best & Easy To cook</h4>
-                                        <div class="blog-date">July 10, 2018</div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="blog-light.html" class="blog-item">
-                                    <div class="blog-image">
-                                        <img src="img/blog/img-8.jpg" alt="#">
-                                    </div>
-                                    <div class="blog-content">
-                                        <span class="cat">Technology</span>
-                                        <h4 class="blog-title">Best Sound Editing Software</h4>
-                                        <div class="blog-date">July 1, 2018</div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="blog-light.html" class="blog-item">
-                                    <div class="blog-image">
-                                        <img src="img/blog/img-9.jpg" alt="#">
-                                    </div>
-                                    <div class="blog-content">
-                                        <span class="cat">Traveling</span>
-                                        <h4 class="blog-title">Top Beaches in the world</h4>
-                                        <div class="blog-date">June 24, 2018</div>
-                                    </div>
-                                </a>
-                            </div>
-
-
+                            
                         </div>
                     </div>
                 </section>
@@ -901,6 +452,8 @@
 
                 <!--Contact Section Start-->
                 <section id="contact" class="contact-section pt-page">
+                    <!--Particle Container-->
+                    <div id="particles-js"></div>
                     <div class="section-container">
 
                         <!--Page Heading-->
@@ -1016,7 +569,10 @@
         <!--Plugins JS-->
         <script src="../js/plugins.min.js"></script>
         <!--Google Map Api-->
+        <!-- <script src="http://ditu.google.cn/maps/api/js?sensor=false"></script> -->
         <script src="http://ditu.google.cn/maps/api/js?sensor=false"></script>
+        <script src="../../src/js/mouse.js"></script>
+
         <!--Site Main JS-->
         <script src="../js/blog_main.js"></script>
         <script>
@@ -1039,7 +595,7 @@
         var now = new Date();
         var year = now.getFullYear();
         
-
+        RunChange();
         window.addEventListener('mousemove',function(xyz)
         {
             imgx = xyz.x - img.offsetLeft - img.clientWidth/2 - odiv.getBoundingClientRect().left;

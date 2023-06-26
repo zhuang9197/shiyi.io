@@ -1,12 +1,12 @@
 {
-  "name": "tomotoes-home-page",
+  "name": "blog",
   "version": "1.0.0",
-  "author": "SimonMa <simon@tomotoes.com>",
+  "author": "shiyi",
   "license": "LGPI-3.0",
-  "homepage": "http://tomotoes.com",
+  "homepage": "http://shi-yi.xyz",
   "repository": "https://github.com/Tomotoes/HomePage",
-  "bugs": "https://github.com/Tomotoes/HomePage/issues",
-  "description": "Tomotoes-HomePage",
+  "bugs": "https://github.com/zhuang9197/shiyi.io/issues",
+  "description": "Gentleman Dog's-HomePage",
   "scripts": {
     "predev": "gulp build",
     "dev": "gulp watch",

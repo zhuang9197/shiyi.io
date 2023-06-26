@@ -5,17 +5,17 @@
 		"favicon": "favicon.ico"
 	},
 	"intro": {
-		"title": "Simon Ma",
+		"title": "shiyi",
 		"subtitle": "Front back left right end engineer",
 		"enter": "enter",
-		"supportAuthor": true,
+		"supportAuthor": false,
 		"background": true
 	},
 	"main": {
-		"name": "Simon Ma",
+		"name": "shiyi",
 		"signature": "Code & Input & Output",
 		"avatar": {
-			"link": "assets/avatar.jpg",
+			
 			"height": "100",
 			"width": "100"
 		},
