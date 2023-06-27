@@ -12,6 +12,7 @@ function RunChange(){
             image.onload = function(){
                 backgournd.style.background = 'url('+url+')';
                 backgournd.style.backgroundSize = 'cover';
+                backgournd.style.backgroundPosition = 'center';
                 //backgournd.style.backgroundSize = "width=100%;height=100%"
                 //backgournd.style.backgroundSize = aspectRatio >= 1 ? "auto 100%" : "100% auto";
 
@@ -25,6 +26,7 @@ function RunChange(){
             image.onload = function(){
                 backgournd.style.background = 'url('+url+') ';
                 backgournd.style.backgroundSize = 'cover';
+                backgournd.style.backgroundPosition = 'center';
                 //backgournd.style.backgroundSize = "width:100%;height:100%";
                 //backgournd.style.backgroundSize = aspectRatio >= 1 ? "auto 100%" : "100% auto";
             }
