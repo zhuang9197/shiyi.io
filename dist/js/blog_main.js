@@ -306,6 +306,7 @@ function contactFormSetup() {
 
 
     $('#contact-form').on('submit', function(e) {
+        debugger
         e.preventDefault();
         var name = $('#cf-name').val(),
             email = $('#cf-email').val(),

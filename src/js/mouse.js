@@ -1,3 +1,15 @@
+
+
+async function loadWord() {
+    const response = await fetch("https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Json/Blog/GentleWord.json");
+    if (response.ok) {
+      const json = await response.json();
+      return json;
+    } else {
+      throw new Error('Network response was not ok.');
+    }
+  }
+
 function RunChange(){
     document.getElementById('home').onclick = function(event){
         var backgournd = document.getElementById('home');
@@ -46,3 +58,15 @@ element.addEventListener("mouseover", function() {
   element.addEventListener("mouseout", function() {
     element.classList.add("hidden");
   });
+
+
+  async function WordChange() {
+
+    const WordJson = await loadWord();
+    document.getElementById("WordChange").onclick = function(event) {
+      var Word = document.getElementById("GentleWord");
+      Word.textContent = WordJson.Word[Math.floor(Math.random() * WordJson.Word.length)]["Word"];
+    };
+  }
+  
+  WordChange();

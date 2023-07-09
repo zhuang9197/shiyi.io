@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../src/css/Blog/1.css">
+
+    <script>
+        var index = { listIndex: 0, listSize: 4};
+
+        window.onload = Load;
+        window.addEventListener('scroll', function (event) {
+
+            var windowHeight = document.documentElement.clientHeight|| document.body.clientHeight;
+            //滚动高度
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            //页面高度
+            var documentHeight = document.documentElement.scrollHeight || document.body.scrollHeight
+
+            var Top = document.getElementById('main').getBoundingClientRect();
+
+            if (windowHeight+scrollTop+1 >= documentHeight) {
+
+                document.getElementById('list').listform('https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Json/Blog/Blog_Database.json', index);
+            }
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+
+            if(Top.top <= 100){
+                window.addEventListener('mousemove',TitleHelper(Top.top));
+                
+                
+                
+            }
+            window.removeEventListener('mousemove',TitleHelper);
+        })
+
+        function Load() {
+            document.getElementById('list').listform('https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Json/Blog/Blog_Database.json', index);
+
+            var btn = document.getElementById('btnMenu');
+            var menu = document.getElementById('menu');
+            btn.addEventListener('click', function () {
+
+                if (getTranslateX(menu) >= 0) {
+                    menu.style.transform = 'translateX(-100%)';
+                    btn.style.background = 'url(../../../src/assets/MenuShow.png) no-repeat';
+                    btn.style.backgroundSize = '100% 100%';
+                } else {
+                    menu.style.transform = 'translateX(0%)';
+                    btn.style.background = 'url(../../../src/assets/MenuHide.png) no-repeat'
+                    btn.style.backgroundSize = '100% 100%';
+                }
+            })
+        }
+
+        function getTranslateX(Dom) {
+            var style = window.getComputedStyle(Dom);
+            var matrix = new WebKitCSSMatrix(style.transform);
+            console.log('translateX: ', matrix.m41);
+            return matrix.m41;
+        }
+
+    </script>
+</head>
+
+<body class="Page">
+    <div id = "Title" class = "MainTitleBox"><h1 class = "MainTitle" id = "hTitle">设计模式</h1></div>
+    <aside id="menu">
+
+        <div style="width: 100%;height: 100%; background-color: aqua; z-index: 999;">
+            
+            <div class="btnMenu" id='btnMenu'
+                style="background-image: url(../../../src/assets/MenuShow.png); background-size: 100%,100%;background-repeat: no-repeat; z-index: 999;">
+            </div>
+            <div id = "divid" class="image-container">
+                <div class = "avatar">
+                    <img class="Yellow" src="https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/GentlemanDog.png" alt="profile-pic">
+                    <img class="Black" src="https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/GentlemanDog1.png" alt="profile-pic">
+                </div>
+                <div style="height: 44PX;"><h2 class="header-name" style="text-align: center;">Gentleman Dog</h2></div>
+                <div id="WordChange" class="Border_box">
+                    <p id="GentleWord" class="noCursor">学习并成为一名绅士</p>
+                </div>
+              
+            </div> 
+            <div>
+                <ul class="MenuUl">
+                    <li class="MenuList" onclick="location.href='../blog.html'">
+                        <a class="MenuA" href="../blog.html">返回首页</a>
+                    </li>
+                    <li class="MenuList" onclick="location.href=''">
+                        <a class="MenuA" >数据库</a>
+                    </li>
+                    <li class="MenuList" onclick="location.href=''">
+                        <a class="MenuA">设计模式</a>
+                    </li>
+                    <li class="MenuList" onclick="location.href=''">
+                        <a class="MenuA">多线程</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main id="main" style="background: rgba(249,93,63,0.1);">
+        <div id = "return" class = "return hidden"><a href="../blog.html"><p class="returnBtn">返回首页</p></a></div>
+
+            
+
+        <div class="container body-wrap" >
+            <ul class="post-list" id="list">
+               
+            </ul>
+        </div>
+    </main>
+    <script src="../../../src/js/listform.js"></script>
+    <script src="../../../src/js/mouse.js"></script>
+</body>
+
+</html>
