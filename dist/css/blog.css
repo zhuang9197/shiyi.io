@@ -1,0 +1,475 @@
+.post-bg{
+  height: 280px !important;
+  position: relative;
+}
+
+.post-info{
+  bottom: 40px !important;
+  position: absolute;
+  bottom: 100px;
+  padding: 0 8%;
+  width: 100%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.post-title{
+  margin-bottom: 8px;
+    color: var(--white);
+    font-weight: normal;
+    font-size: 2.5em;
+    line-height: 1.5;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.layout{
+
+  line-height: 2;
+}
+
+:root{
+  --h1-color:#eff;
+  --h1-bg:#212121;
+  --h1tools-bg:#1c1c1c;
+  --h1tools-color:rgba(238,255,255,0.8);
+  --hlnumber-bg:#212121;
+  --hlscrollbar-bg:#353535;
+  --hlexpand-bg:linear-gradient(180deg, rgba(33,33,33,0.6), rgba(33,33,33,0.9));
+  --card-bg:#fff;
+  --global-bg:#fff;
+  --hlnumber-bg:#212121;
+  --hlnumber-color:rgba(238,255,255,0.5);
+  --light-grey:#eee;
+  --white:#fff;
+}
+
+.TitleMain{
+  margin: 5% 11%;
+  border-radius: 50px;
+  padding: 4% 3%;
+  width: 60%;
+  background: var(--card-bg);
+}
+
+.Directory{
+  padding-left: 30px;
+}
+
+.CodeTools{
+  min-height: 24px;
+  height: 2.15em;
+  background: var(--h1tools-bg);
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: var(--h1tools-color);
+}
+
+.Output{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-left: 4px solid blue; /* 左边框蓝色 */
+  background-color: lightblue; /* 背景浅蓝色 */
+  width: 100%; /* 设置宽度 */
+  min-height: 60px;
+  height: auto; /* 设置高度 */
+  font-size: 15px;
+}
+
+.Background{
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/Background.png);
+  background-size: cover;background-repeat: no-repeat;background-position: center;
+  z-index: -999;
+}
+
+body{
+  position: relative;
+  min-height: 100%;
+  background: var(--global-bg);
+  color: var(--font-color);
+  font-size: var(--global-font-size);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  line-height: 2;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+ul{
+  margin: 0 0 10px 0;
+}
+
+
+
+#cnblogs_post_body .cnblogs_code {
+  /* background-color: rgba(152, 147, 147, 0.28); */
+  /* border: 1px solid rgba(255, 251, 251, 0); */
+  border-radius: 4px;
+  color: #000;
+  font-family: Courier New !important;
+  font-size: 13px !important;
+  margin: 5px 0;
+  overflow: auto;
+  padding: 5px;
+}
+
+.hljs-built_in,
+    .hljs-keyword,
+    .hljs-name,
+    .hljs-selector-tag,
+    .hljs-tag {
+      color: #332870 !important;
+    }
+
+    .hljs-emphasis,
+    .hljs-strong {
+      color: #a8a8a2 !important;
+    }
+    .hljs-built_in,
+    .hljs-keyword,
+    .hljs-name,
+    .hljs-selector-tag,
+    .hljs-tag {
+      color: #bababa !important;
+    }
+
+    .hljs-bullet,
+    .hljs-link,
+    .hljs-literal,
+    .hljs-number,
+    .hljs-quote,
+    .hljs-regexp {
+      color: #27c94a !important;
+    }
+
+    .hljs-code,
+    .hljs-selector-class {
+      color: #eeff00 !important;
+    }
+
+    .hljs-emphasis {
+      font-style: italic !important;
+    }
+
+    .hljs-attribute,
+    .hljs-keyword,
+    .hljs-name,
+    .hljs-section,
+    .hljs-selector-tag,
+    .hljs-variable {
+      color: #00c3ff !important;
+    }
+
+    .hljs-attr,
+    .hljs-params {
+      color: #b9b9b9 !important;
+    }
+
+    .hljs-string {
+      color: #ffbb00 !important;
+    }
+
+    .hljs-addition,
+    .hljs-built_in,
+    .hljs-builtin-name,
+    .hljs-selector-attr,
+    .hljs-selector-id,
+    .hljs-selector-pseudo,
+    .hljs-subst,
+    .hljs-symbol,
+    .hljs-template-tag,
+    .hljs-template-variable,
+    .hljs-title,
+    .hljs-type {
+      color: #dfe231 !important;
+    }
+
+    .hljs-comment,
+    .hljs-deletion {
+      color: #008839 !important;
+    }
+
+    .hljs-meta {
+      color: #00ff0d !important;
+    }
+    #cnblogs_post_body .toc ul {
+      max-height: 550px;
+      overflow-y: auto;
+    }
+
+    .cnblogs-markdown .hljs {
+      display: block;
+      overflow-x: auto;
+      padding: 0.5em !important;
+      background: #2b2b2b !important;
+      font-size: 14px !important;
+      color: #bababa !important;
+      font-family: Source Code Pro, Consolas, Menlo, Monaco, Courier New,
+        monospace !important;
+    }
+    #cnblogs_post_body h1::before {
+      content: "H1";
+      margin-right: 10px;
+      color: gainsboro;
+    }
+    #cnblogs_post_body h2::before {
+      content: "H2";
+      margin-right: 10px;
+      color: gainsboro;
+    }
+    #cnblogs_post_body h3::before {
+      content: "H3";
+      margin-right: 10px;
+      color: gainsboro;
+    }
+    #mainContent #post_detail #cnblogs_post_body h4::before {
+      content: "h4";
+      margin-right: 10px;
+      color: gainsboro;
+    }
+    #cnblogs_post_body h5::before {
+      content: "h5";
+      margin-right: 10px;
+      color: gainsboro;
+    }
+    #cnblogs_post_body h6::before {
+      content: "h6";
+      margin-right: 10px;
+      color: gainsboro;
+    }
+    #cnblogs_post_body td.hljs-ln-numbers {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      text-align: center;
+      color: #ccc;
+      border-right: 1px solid #ccc;
+      vertical-align: top;
+      padding-right: 5px;
+
+      /* your custom style here */
+    }
+
+    #cnblogs_post_body .hljs td {
+      border-collapse: inherit;
+      min-width: unset;
+      padding-left: 20px;
+      padding-right: 10px;
+    }
+    .custom-button {
+      position: relative;
+      display: inline-block;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      overflow: hidden;
+      z-index: 1;
+      width: 40%; /* 调整按钮的宽度 */
+      height: 66px; /* 调整按钮的高度 */
+      border-radius: 50%; /* 将按钮设置为椭圆形 */
+    }
+    .custom-button-left{
+      left: 1%;
+    }
+    .custom-button-right{
+      margin: 0 0 0 17%;
+    }
+    
+    .custom-button .button-text {
+      position: relative;
+      z-index: 2;
+      display: block;
+      padding: 0 16px; /* 调整文字的左右内边距 */
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      transition: transform 0.3s ease;
+      white-space: nowrap; /* 防止文字换行 */
+      overflow: hidden;
+      text-overflow: ellipsis; /* 使用省略号表示溢出的文本 */
+    }
+    
+    
+    .custom-button .button-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right, #ff416c, #ff4b2b);
+      opacity: 0.8;
+      z-index: -1;
+      transition: transform 0.3s ease;
+    }
+    
+    .custom-button .button-hover {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right, #ff4b2b, #ff416c);
+      transition: left 0.3s ease;
+      z-index: -1;
+    }
+    
+    .custom-button .button-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: -1;
+    }
+    
+    .custom-button:hover .button-text {
+      transform: translateY(-2px);
+    }
+    
+    .custom-button:hover .button-background {
+      transform: translateX(100%);
+    }
+    
+    .custom-button:hover .button-hover {
+      left: 0;
+    }
+    
+    .custom-button:hover .button-overlay {
+      opacity: 1;
+    }
+    
+    .custom-button:active .button-text {
+      transform: translateY(2px);
+    }
+    
+    .aside-Content{
+      top:20%;
+      position: fixed; 
+      display: block;
+      height: 100%;
+      right: 2%;
+      z-index: 2;
+      width: 20%;
+      
+    }
+
+    .card{
+      position: relative;
+      width: 100%;
+      height: 20%;
+    }
+
+    .card-Content{
+      border-radius: 10%;
+      background-color: antiquewhite;
+    margin: 0px 10% 0px 10%;
+      height: 100%;
+    }
+
+    .avatar-Content{
+      background-color: white;
+    }
+
+    .round-image-box {
+      height: 50%;
+      width: 35%;
+      position: relative;
+      overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50%;
+    }
+
+    .round-image{
+      height: 100%;
+      width: 100%;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      transition: transform 0.5s ease-in-out;
+  }
+
+  .round-image:hover {
+    transform: rotateX(360deg) rotateY(360deg) scale(1.2);
+  }
+
+  .round-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    backface-visibility: hidden;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+
+
+    .author{
+      position: relative;
+    height: 50%;
+      text-align: center;
+    }
+
+    .authorP{
+      margin:0 0 0 0;
+      height: 100%;
+      width: 100%;
+      font-size: 20px;
+    }
+    .box-shadow {
+      box-shadow: 5px 7px 12px rgba(0, 0, 0, 0.4);
+      border-radius: 13px;
+    }
+
+
+    .sticky_layout{
+      position: relative;
+    top: 10%;
+    }
+
+    .arcitleNav{
+      width: 80%;
+      height: auto;;
+      background-color: antiquewhite;
+      margin: 0 10% 0 10%;
+    }
+
+
+    .a-noDecoration{
+      text-decoration: none;
+    }
+
+    .li-noType{
+      list-style-type: none;
+    }
+
+    .blog-time{
+      color: #261671;
+      font-size: smaller;
+    }
+
+    .button-div{
+      display: block;
+      width: 100%;
+    }

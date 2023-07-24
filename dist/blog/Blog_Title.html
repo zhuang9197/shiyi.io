@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>绅士狗</title>
+    <script src="../../src/js/Blogform.js"></script>
+    <script>
+        function functionname(url,id)
+        {
+            Blogform(url);
+            Blog(id);
+        }
+    </script>
+
+</head>
+<body>
+    <div class="Background"></div>
+    <div id="pages" class="post">
+        <header class="post-bg">
+            <div class="post-info">
+                <h1 id="blog-Title" class="post-title">标题</h1>
+                <time id="blog-pubication" class="blog-time">发表于:2023-03-01 </time>|<time id="blog-update" class="blog-time"> 更新于：2023-07-07</time>
+            </div>
+        </header>
+        <main class="layout">
+            <div class="aside-Content">
+                <div class="card">
+                    <div class="card-Content">
+                        <div class="round-image-box">
+                            <img class="round-image cool-image animate__animated animate__zoomIn" alt="炫酷的动画图片" src="https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/GentlemanDog.png" width="100" height="100" alt="avatar">
+                        </div>
+                        <div class="author"><p class="authorP">绅士狗</p></div>
+                    </div>
+                   <div class="sticky_layout">
+                    <div class="arcitleNav">
+                        <ul id = "ul_Nav">
+                            <li>
+                                <a class="a-noDecoration" href="#section1">sec1</a>
+                            </li>
+                            <li>
+                                <a class="a-noDecoration" href="#section1">sec1</a>
+                            </li>
+                            <li>
+                                <a class="a-noDecoration" href="#section1">sec1</a>
+                            </li>
+                            
+                            <li>
+                                <a class="a-noDecoration" href="#section1">sec1</a>
+                            </li>
+                            <li>
+                                <a class="a-noDecoration" href="#section1">sec1</a>
+                            </li>
+                            <li>
+                                <a class="a-noDecoration" href="#section1">sec1</a>
+                            </li>
+                            <li>
+                                <a class="a-noDecoration" href="#section1">sec1</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="arcitleNav">
+                        <div style="text-align: center;">导航</div>
+                        <ul class>
+                            <li class="li-noType">
+                                <a class="a-noDecoration" href="blog.html">主页</a>
+                            </li>
+                            <li class="li-noType">
+                                <a class="a-noDecoration" href="List/Database.html">数据库问题</a>
+                            </li>
+                            <li class="li-noType">
+                                <a class="a-noDecoration" href="List/Framework.html">设计模式</a>
+                            </li>
+                           
+                            <li class="li-noType">
+                                <a class="a-noDecoration" href="List/Database.html">数据库问题</a>
+                            </li>
+                            <li class="li-noType">
+                                <a class="a-noDecoration" href="List/Database.html">其它问题</a>
+                            </li>
+                        </ul>
+                    </div>
+                   </div>
+                </div>
+            </div>
+            <div class="TitleMain">
+                <article id="BlogTitle">
+                    
+                </article>
+                <div class="button-div">
+                    <button id="Button_Last" class="custom-button custom-button-left" title="这是一个很长的按钮文本，鼠标悬停可查看完整内容">
+                        <span id="Last_Title" class="button-text">上一篇</span>
+                        <span class="button-background"></span>
+                        <span class="button-hover"></span>
+                        <span class="button-overlay"></span>
+                      </button>
+                      <button id="Button_Next" class="custom-button custom-button-right" title="这是一个很长的按钮文本，鼠标悬停可查看完整内容" onclick="functionname('https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Json/Blog/Database/sqlserver_Base.txt', 2)">
+
+                        <span id="Next_Title" class="button-text">下一篇</span>
+                        <span class="button-background"></span>
+                        <span class="button-hover"></span>
+                        <span class="button-overlay"></span>
+                      </button>
+                      
+                      
+                </div>
+                
+            </div>
+          
+        </main>
+    </div>
+    <div>
+        <!-- 加载 Highlight.js 样式 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+        <!-- 加载 Highlight.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+        <!-- 加载 highlightjs-line-numbers.js -->
+        <script src="https://cdn.bootcdn.net/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+        <script type="text/javascript">
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            
+        // 获取指定参数的值
+            const Url = urlParams.get('Url');
+            const Id = urlParams.get('Id');
+
+             document.getElementById('BlogTitle').Blogform(Url);
+             //填充button与左边框。
+             Blog(Id)
+             //
+        </script>
+        
+    </div>
+   
+</body>
+</html>
