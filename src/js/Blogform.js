@@ -13,8 +13,8 @@ function Blog(Id,Url){
         var html_li = "";
         BlogJson = json.List.find(item => item.Id == Id);
         document.getElementById('blog-Title').textContent = BlogJson.Title;
-        document.getElementById('blog-pubication').textContent = BlogJson.pubication;
-        document.getElementById('blog-update').textContent = BlogJson.update;
+        document.getElementById('blog-pubication').textContent = "发表: "+BlogJson.CreateTime;
+        document.getElementById('blog-update').textContent = "更新: "+BlogJson.UpdateTime;
         if(BlogJson.Nav.length >=1)
         {
             for(i=0;i<BlogJson.Nav.length;i++){
