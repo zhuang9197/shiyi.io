@@ -24,14 +24,14 @@
                 }else{
                     var num = json.List.length;
                 }
-
+            
                 for(i=index.listIndex;i<num;i++){
                     var html = `<li class="post-list-item fade in" style="background-image: url(https://cdn.jsdelivr.net/gh/zhuang9197/Resource-Silo/Image/Blog/Database/DatabaseLine.png)">`;
                         html += `<article id = "${json.List[i]["id"]}" class = "article-card article-type-post animation-show" style = "visibility:hidden;">`;
-                        html += `<h3 class ="post-title"><a href = "../Blog_Title.html?Url=${json.List[i]["Url"]}&Id=${json.List[i]["Id"]}" >"${json.List[i]['Title']}"</a></h3>`;
+                        html += `<h3 class ="post-title"><a href = "../Blog_Title.html?Url=${json.List[i]["Url"]}&Id=${json.List[i]["Id"]}&JsonUrl=${json.JsonUrl}" >"${json.List[i]['Title']}"</a></h3>`;
                         html += `<div class ="post-meta"><time itemprop="dateCreated datePublished" class = "post-time"></tiem></div>`;
-                        html += `<div class ="post-content" style = "color:#666"><p>${json.List[i]['Url']}</p><div><a href = "../Blog_Title.html?Url=${json.List[i]["Url"]}&Id=${json.List[i]["Id"]}" class="post-more waves-button alone">阅读全文<span>>></span></a></div></div>`;
-                        html += `<div class = "post-footer"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../Blog_Title.html?Url=${json.List[i]["Url"]}&Id=${json.List[i]["Id"]}"}" rel = "tag"></a></li><li class="article-tag-list-item"><a class='article-tag-list-link" href="../Blog_Title.html?Url=${json.List[i]["Url"]}&Id=${json.List[i]["Id"]}"></a></li></ul></div>`
+                        html += `<div class ="post-content" style = "color:#666"><div><a href = "../Blog_Title.html?Url=${json.List[i]["Url"]}&Id=${json.List[i]["Id"]}&JsonUrl=${json.JsonUrl}" class="post-more waves-button alone">阅读全文<span>>></span></a></div></div>`;
+                        html += `<div class = "post-footer"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../Blog_Title.html?Url=${json.List[i]["Url"]}&Id=${json.List[i]["Id"]}&JsonUrl=${json.JsonUrl}"}" rel = "tag"></a></li><li class="article-tag-list-item"><a class='article-tag-list-link" href="../Blog_Title.html?Url=${json.List[i]["Url"]}&Id=${json.List[i]["Id"]}&JsonUrl=${json.JsonUrl}"></a></li></ul></div>`
                         html +=`</article>`;
                         html +=`</li>`;
                     

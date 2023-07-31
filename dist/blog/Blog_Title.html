@@ -75,10 +75,10 @@
                             </li>
                            
                             <li class="li-noType">
-                                <a class="a-noDecoration" href="List/Database.html">数据库问题</a>
+                                <a class="a-noDecoration" href="List/Design.html">设计模式</a>
                             </li>
                             <li class="li-noType">
-                                <a class="a-noDecoration" href="List/Database.html">其它问题</a>
+                                <a class="a-noDecoration" href="List/CSharp.html">CSharp</a>
                             </li>
                         </ul>
                     </div>
@@ -124,11 +124,12 @@
             
         // 获取指定参数的值
             const Url = urlParams.get('Url');
+            const JsonUrl = urlParams.get('JsonUrl');
             const Id = urlParams.get('Id');
-
+            
              document.getElementById('BlogTitle').Blogform(Url);
              //填充button与左边框。
-             Blog(Id)
+             Blog(Id,JsonUrl)
              //
         </script>
         

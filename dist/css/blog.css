@@ -282,10 +282,10 @@ ul{
       border-radius: 50%; /* 将按钮设置为椭圆形 */
     }
     .custom-button-left{
-      left: 1%;
+      float: left;
     }
     .custom-button-right{
-      margin: 0 0 0 17%;
+      float: right;
     }
     
     .custom-button .button-text {
@@ -472,4 +472,5 @@ ul{
     .button-div{
       display: block;
       width: 100%;
+      overflow: hidden;
     }
