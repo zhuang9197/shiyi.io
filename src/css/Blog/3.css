@@ -1,0 +1,15 @@
+.Border_box{
+    border: 10px solid darkslategrey;
+    padding: 10px;
+    background-color: darkgrey;
+}
+
+.Border_box p{
+    text-align: center;
+    color: navy;
+    font-size: larger;
+}
+
+.noCursor{
+    cursor: default;
+}

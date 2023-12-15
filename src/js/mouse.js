@@ -51,17 +51,20 @@ function RunChange(){
 
 var element = document.getElementById("return");
 
-element.addEventListener("mouseover", function() {
+if(element){
+  element.addEventListener("mouseover", function() {
     element.classList.remove("hidden");
   });
   
   element.addEventListener("mouseout", function() {
     element.classList.add("hidden");
   });
+}
+
 
 
   async function WordChange() {
-
+    console.log('adsf');
     const WordJson = await loadWord();
     document.getElementById("WordChange").onclick = function(event) {
       var Word = document.getElementById("GentleWord");
