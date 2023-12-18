@@ -69,8 +69,8 @@ function Blogform(url) {
         })
         .then(function (text) {
          
-            
-            var html = text
+            var txt = replaceNewlines(text);
+            var html = txt
                 .replace(/#\d/g, function (match) {
                     var id = match.substring(1);
                     return '<h' + id + '>';
@@ -116,3 +116,70 @@ function Blogform(url) {
 
 Element.prototype.Blogform = Blogform;
 
+
+
+
+function replaceNewlines(text) {
+
+    var txt = removeNewlines1(text);
+
+
+    var pattern = /(%d[\s\S]*?@d)|\n/g;
+
+    // 使用 replace 方法替换匹配的部分
+    var result = text.replace(pattern, function(match, group) {
+        // 如果是 %d 到 @d 之间的部分，则不进行替换
+        if (group) {
+            return group;
+        } else {
+            // 替换其他换行符为 <br>
+            return '<br>';
+        }
+    });
+    
+    var result1 = result.replace(/<br>(?:<br>)+/g, "<br>");
+
+    return removeNewlines(result1);
+  }
+
+
+
+  function removeNewlines(text) {
+    var searchString = /\$c-(cs|sql)\n/g;
+    var replacementString = "$c-$1";
+  
+    var result = text.replace(searchString, replacementString);
+  
+    return result;
+  }
+
+
+function removeNewlines1(text) {
+    var replacements = [
+      { search: /#d\n/g, replace: "#d" },
+      { search: /@d\n/g, replace: "@d" },
+      { search: /#a-\d+\n/g, replace: function(match) {
+        // 从匹配的字符串中提取数字
+        var number = match.match(/\d+/)[0];
+        return "#a-" + number;
+      }},
+      { search: /@a\n/g, replace: "@a" },
+      { search: /#2\n/g, replace: "#2" },
+      { search: /@2\n/g, replace: "@2" },
+      { search: /#p\n/g, replace: "#p" },
+      { search: /@p\n/g, replace: "@p" }
+      // 继续添加其他规则...
+    ];
+  
+    replacements.forEach(function(replacement) {
+      if (typeof replacement.replace === 'function') {
+        text = text.replace(replacement.search, function(match) {
+          return replacement.replace(match);
+        });
+      } else {
+        text = text.replace(replacement.search, replacement.replace);
+      }
+    });
+  
+    return text;
+  }
